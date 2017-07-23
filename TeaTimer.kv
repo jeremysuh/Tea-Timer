@@ -1,0 +1,65 @@
+<CustButton@Button>:
+    font_size: 32
+    color: 0, 0, 0, 1
+    size: 125, 50
+    background_color: 1, 1, 1, 0.75
+    background_normal: 'white.png'
+    size_hint: .3, .2
+
+	 
+  
+TeaTimerLayout:
+
+<TeaTimerLayout>:
+
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'background.png'
+
+        Rectangle:
+            pos: 300,250
+            size: 200,200
+            source: 'teacup.png'
+
+         
+
+	FloatLayout:
+
+		CustButton:
+	        text: "White Tea"
+	        pos_hint: {"x": 0, "top": 1}
+
+
+		CustButton:
+	        text: "Green Tea"
+	        pos_hint: {"x": 0, "bottom": 1}
+
+	    CustButton:
+	        text: "Oolong Tea"
+	        pos_hint: {"x": 0, "center_y": .5}
+
+	    CustButton:
+	        text: "Black Tea"
+	        pos_hint: {"right": 1, "top": 1}
+
+		CustButton:
+	        text: "Herbal Tea"
+	        pos_hint: {"right": 1, "center_y": .5}
+
+	    CustButton:
+	        text: "Rooibos Tea"
+	        pos_hint: {"right": 1, "bottom": 1}
+
+	    Label:
+	        text: "Tea Timer"
+	        font_size: 32
+	        pos_hint: {"right": 1, "center_y": 0.4}
+
+	 
+        
+
+
+  
+ 
